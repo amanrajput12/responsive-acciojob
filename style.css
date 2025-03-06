@@ -1,6 +1,14 @@
-.img{
-    width:200px
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1c19;
 }
+
+.imgcontainer .img{
+    width:200px;
+}
+
 
 .nav{
     background-color: #1a1c19;
@@ -48,12 +56,21 @@
     height: 90vh;
     border-radius: 10px;
     background-color: #e0d6c2 ;
+    margin: 10px;
 }
 
-.aside >img{
+.imgcontainer >img{
     /* height: 80%; */
     width: 90%;
+    
 }
+ .imgcontainer >img:hover{
+    transition: all 2s;
+}
+ .imgcontainer >img:hover{
+    transform: scale(1.1);
+}
+
 
 .heading{
     color: #342415;
@@ -62,9 +79,45 @@
     padding: 2px;
     border-radius: 5px;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
-.smallimg{
+.imgcontainer .smallimg{
     width: 50px;
     border-radius: 50%;
 }
+.imgcontainer{
+    /* width: ; */
+    overflow: hidden;
+    margin: auto;
+}
+
+ h1{
+    font-size: 30px;
+}
+h1 span{
+    text-decoration: underline;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+.section2 .down{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #b6ae9e;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #b6ae9e;
+}
+
+.section2 .down div{
+    width: 30%;
+    
+}
+.section2 .down img{
+    width: 50%;
+    height: 300px;
+}
+
